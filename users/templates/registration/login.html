@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Вхід</h2>
+
+<form method="post" novalidate>
+  {% csrf_token %}
+  {% include 'loginCustom.html' with form=form %}
+  <button type="submit" class="btn btn-primary" style="margin-bottom:20px;">Вхід</button>
+</form>
+
+    <a href="{% url 'password_reset' %}" class="btn btn-primary">Скинути пароль</a>
+    <a href="{% url 'register' %}" class="btn btn-primary">Регистрація</a>
+
+<div class="height-100"></div>
+<div class="height-100"></div>
+<div class="height-100"></div>
+<div class="height-100"></div>
+<div class="height-100"></div>
+{% endblock %}

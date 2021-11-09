@@ -1,0 +1,537 @@
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.height-100{
+  height: 80px;
+}
+
+.container {
+  font-family: Montserrat;
+  font-size: 20px;
+    font-weight: 600;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.dropbtn {
+  color: rgba(0, 0, 0, 0.71);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  background-color:transparent;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  color: rgba(0, 0, 0, 0.71);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  color: #000000;
+}
+
+.navbar{
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: white;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 30%), 0 2px 15px rgb(0 0 0 / 23%);
+}
+
+
+.navbar-content, .navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-content i{
+  margin: 0 10px 0 15px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.71);
+  letter-spacing: -1px;
+}
+
+i a{
+  color: rgba(0, 0, 0, 0.71);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.navbar-content i:hover {
+  color: black;
+  transition: .5s;
+}
+
+i a:hover{
+  color: black;
+  transition: .5s;
+}
+
+/* D0DCF2 */
+.main {
+
+  background-color: #FDF5E6;
+  background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0 200px;
+}
+
+.main-content {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 15px;
+
+  padding-right: 15px;
+
+  position: relative;
+  width: 100%;
+}
+
+.main-content div{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-content-div {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 60px;
+  width: 50%;
+}
+
+.main-content-div h2{
+  color: #333;
+  width: 80%;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2em;
+    margin-bottom: 23px;
+}
+
+.main-content-div p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  width: 80%;
+  color: #000000;
+  font-size: 14px;
+  line-height: 2em;
+  margin-bottom: 37px;
+}
+
+.main-content-div button{
+  cursor: pointer;
+  color: white;
+  border: 0;
+  width: 230px;
+  font-size:20px;
+  border-radius: 20px;
+  padding: 12px;
+  background-color: #0000008a;
+}
+
+.main-content-div button:hover {
+  background-color: rgba(0, 0, 0, 0.795);
+  transition: 0.5s;
+}
+
+.block_bg {
+  background: #333e56;
+  padding: 100px 0 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-content {
+      color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: #333e56;
+    padding: 50px;
+    border: 3px solid white;
+    width: 33%;
+}
+}
+
+.block-content i {
+  margin-bottom:15px;
+  font-size: 50px;
+  color: #000000;
+}
+
+.block-content p{
+  font-family: Montserrat;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2.2;
+  color: #fff;
+  text-align: center;
+}
+
+.block-content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4em;
+  color: #fff;
+  font-family: Montserrat;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.block-content h2 i {
+  color: #fff;
+}
+
+
+/* hover a end */
+
+
+.block2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 90px;
+}
+
+
+.block2-content {
+  color: black;
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 66px 0px 0 0px;
+}
+
+.block2-content img{
+  /* /9o-0*//idth: 15%; */
+  margin-bottom: 15px;
+}
+
+.block2-content h2 {
+  padding: 0;
+color: #333;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+
+
+.block2-content button{
+  margin-top: 40px;
+  cursor: pointer;
+  color: white;
+  border: 0;
+  width: 200px;
+  height: 50px;
+  font-size:20px;
+  border-radius: 50px;
+  background-color: #686157;
+}
+
+.block2-content p {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 500;
+  font-family: Montserrat;
+}
+
+.block3 {
+  background-image: url('img/docks.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 111px 0 91px;
+}
+
+.block3-content h2{
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.block3-content p{
+  color: #bebebe;
+  font-family: "Lato",sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.square{
+  align-items: flex-start;
+
+  display: flex;
+}
+
+
+.square div{
+  align-items: center;
+    border-right: 1px solid #4f5559;
+  border-left: 1px solid #4f5559;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 15px 15px;
+    width: 25%;
+    height: 200px;
+  justify-content: center;
+}
+
+.square div p{
+  margin-bottom: 0;
+}
+
+.square .one {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 2;
+  text-align: center;
+}
+
+.square .two {
+  font-style: italic;
+  color: #b3bbc1;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.8;
+  letter-spacing: 2.3px;
+  text-align: center;
+}
+
+
+.block4 h2{
+  margin-bottom: 47px;
+  text-align: center;
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.block4 {
+  padding: 80px 0 95px;
+}
+
+.block4-div1 {
+  align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.block4-content {
+  margin-bottom: 30px;
+    padding: 0 10px;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.block4-div2{
+  align-items: center;
+    border: 1px solid #4f4e32;
+    display: flex;
+    flex-direction: column;
+    padding: 49px 35px 44px;
+    height: 460px;
+  background: #ffffff;
+}
+
+.block4-content .block4-content{
+  background-color: white;
+}
+
+.block4-div2 .block-content{
+  width: 100%;
+  background-color: #fff;
+}
+
+.block4-div2 .block-content{
+  padding: 0;
+}
+
+
+
+.block4-div2 .block-content h2{
+  font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.block4-div2 .block-content p{
+  color: #6a7680;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: -0.1px;
+  line-height: 2.2;
+  margin-bottom: 14px;
+}
+
+.footer {
+  background-color: #000000b8;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+footer {
+
+  padding: 20px;
+  display: flex;
+
+}
+
+section {
+  display: flex;
+    flex-direction: column;
+    /* padding: 0 31px 0 7px; */
+    color: #bebebe;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71em;
+    letter-spacing: -0.1px;
+    /* margin-top: 30px; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+section h2{
+  font-size: 24px;
+  font-weight:700;
+  font-family: Montserrat;
+  margin-bottom: 20px
+}
+
+section i{
+  margin-bottom:30px;
+}
+
+section i:hover {
+  color: white;
+  transition:all 0.5s;
+}
+
+section a:hover {
+  color: white;
+  transition:all 0.5s;
+}
+
+section a{
+  font-size: 20px;
+  font-weight:700;
+  font-family: Montserrat;
+  color: #bebebe;
+}
+
+p span{
+  font-size: 16px;
+  font-weight: 800;
+}
+
+
+
+/* @media screen and (max-width: 1500px) {
+  .main-content-div h2 {
+    font-size: 40px;
+  }
+} */

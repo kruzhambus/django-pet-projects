@@ -1,0 +1,46 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+{% for post in object_list %}
+
+<div class="cards1">
+    <div class="contact1">Завдання для групи: {{ post.group }}</div>
+    <div class="card1 active" id="overview">
+
+        <div class="card-content1">
+            <div class="row">
+                <div class="left col">
+                    <h2><p>{{ post.title }}</p></h2>
+                    <p style="color: #00000087">{{ post.body_text }}</p>
+                    <p>З повагою, Дремлюга Сергій Олександрович {{ post.author }}</p>
+                    <p>Посилання: <a href="{{ post.link }}">{{ post.link }}</a></p>
+                    <p class="install"> <a href="{{ post.specifications.url }}">Завантажити інформацію</a>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+{% endfor %}
+<div class="next">
+                        <div>{% if page_obj.has_previous %}
+                            <a href="?page=1">&laquo;</a>
+                            <a href="?page={{ page_obj.previous_page_number }}"><</a>
+                            {% endif %}
+                            <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+                            {% if page_obj.has_next %}
+                            <a href="?page={{ page_obj.next_page_number }}">></a>
+                            <a href="?page={{ page_obj.paginator.num_pages }}">&raquo;</a>
+                            {% endif %}</div>
+                    </div>
+{% endblock %}
+

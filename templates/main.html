@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>Моя тестовая страница</title>
+
+
+    <link rel="stylesheet" href="{% static 'main_page.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,500;1,700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+
+</script>
+</head>
+
+<body>
+<div class="height-100"></div>
+<div class="navbar">
+    <div style="display: flex;
+    justify-content: space-around;
+    height: 100px; max-width: 1750px; margin: auto;">
+        <div class="navbar-content">
+            <i class="fa fa-home" aria-hidden="true"> <a href="{% url 'index_main' %}" rel="hover-shadow" class="button hover-shadow">Головна</a></i>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Для учнів</button>
+                <div class="dropdown-content">
+                    <a href="/hometasks/posts">Дошанє завдання</a>
+                    <a href="/quiz">Тестування</a>
+                    <a href="/students/books/">Підручники</a>
+                </div>
+            </div>
+            <i class="fa fa-coffee" aria-hidden="true"> <a href="/method" rel="hover-shadow" class="button hover-shadow">Методична робота</a></i>
+            <i class="fa fa-bookmark" aria-hidden="true"> <a href="/distance" rel="hover-shadow" class="button hover-shadow">Дистанційне навчання</a></i>
+            <i class="fa fa-wrench" aria-hidden="true"><a href="/industrial" rel="hover-shadow" class="button hover-shadow"> Виробниче навчання</a></i>
+            <i class="fa fa-shield" aria-hidden="true"><a href="/practical" rel="hover-shadow" class="button hover-shadow"> Практичний центр</a></i>
+
+            <i class="fa"><a href="/register" rel="hover-shadow" class="button hover-shadow">Войти</a></i>
+        </div>
+    </div>
+</div>
+
+
+<div class="main">
+    <div class="container">
+        <div class="main-content">
+            <div>
+                <img src="{% static 'img/photo_2021-09-15_17-12-18.jpg' %}" height =745  alt="">
+                <div class="main-content-div">
+                    <h2>Дремлюга Сергій Олександрович</h2>
+                    <p>ОСВІТА: Вища Вінницький Політехнічний Інститут <br>
+                        СПЕЦІАЛЬНІСТЬ: Інженер-механік <br>
+                        СТАЖ ПЕДАГОГІЧНОЇ РОБОТИ: 17 років <br>
+                        МІСЦЕ РОБОТИ: Вище художнє професійно-технічне училище №5 м.Вінниці. <br>
+                        ПОСАДА: Викладач спеціальних дисциплін. <br>
+                        Керівник навчально-практичного центру підготовки робітників з професії «Монтажник санітарно-технічних систем і
+                        устаткування». <br>
+                        Голова методичної комісії мулярів, монтажників санітарно-технічних систем і устаткування,
+                        електрогазозварників, виробників художніх виробів з металу.
+                        Майстер виробничого навчання.
+                        Спеціаліст вищої категорії,
+                        викладач-методист.
+                    </p>
+                    <button type="button" onclick="window.location.href='/contact'" >Отримати консультацію</button>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="block_bg">
+<div class="container">
+    <div class="block">
+        <div class="block-content">
+
+             <h2><i class="fa fa-bookmark" aria-hidden="true"></i><br> ДИСТАНЦІЙНЕ НАВЧАННЯ</h2>
+            <p> Тут учні знайдуть конспекти уроків, презентації,також підготуватись до тестових завдань, які будуть після кожного уроку.</p>
+        </div>
+        <div class="block-content">
+            <h2 style=""><i class="fa fa-home" aria-hidden="true"></i><br> ДЛЯ <br>ВЧИТЕЛІВ</h2>
+            <p>Плани уроків по професіях монтажник санітарно-технічних систем і устаткування, електрогазозварник, презентації до уроків, відео ролики. Все це Ви знайдете тут.</p>
+
+        </div>
+        <div class="block-content">
+            <h2><i class="fa fa-wrench" aria-hidden="true"></i><br> ВИРОБНИЧЕ НАВЧАННЯ</h2>
+            <p>Ви знайдете тут плани уроків виробничого навчання, інструкційні карти по професіях презентації до уроків, відео ролики.</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<div style="background-color:#FDF5E6; ">
+<div class="container">
+    <div class="block2">
+        <div class="block2-content">
+            <img src="{% static 'img/Vinnytsia_coat.png' %}" alt="">
+        </div>
+        <div class="block2-content" style="padding-right: 100px; padding-top: 80px;">
+            <p>Я Вам вдячний за те, що Ви потрапили на цей сайт.</p>
+            <p>Сподіваюсь, що інформація, яка тут розміщена буде цікавою для викладачів спеціальних дисциплін з професій «монтаж санітарно-технічних систем і устаткування», «електрогазозварник», а також  для тих, хто працює у сфері професійно-технічної освіти. До вашої уваги я представляю свої методичні напрацювання.</p>
+<p>Однак, більше моя робота спрямована на впровадження елементів дистанційного навчання при вивченні відповідних предметів професійно-теоретичної підготовки учнями. Тому хочу звернутися до майбутніх сантехників та зварників: тепер не кажіть, що не вивчив, бо хворів, проспав чи так забув;) Все, що я тут розміщую має забезпечити неперервність навчально-виховного процесу й сприятиме формуванню мобільного, креативного кваліфікованого робітника. «Вчіться – не лініться».
+</p>
+<p>З повагою – Дремлюга Сергій Олександрович – викладач вищої категорій, «викладач-методист» Вищого художнього професійно технічного училища № 5 м. Вінниці.
+</p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="block3">
+    <div class="container">
+        <div style="margin: auto;">
+            <div class="block3-content">
+                <h2>“Мистецтво навчання є мистецтво пробуджувати в юних душах допитливість і потім задовольняти її”. А.Франс</h2>
+                <div class="square">
+                    <div>
+                        <p class="one">1894</p>
+                        <p class="two">Успішних випускників</p>
+                    </div>
+                    <div>
+                        <p class="one">17</p>
+                        <p class="two">Стаж роботи</p>
+                    </div>
+                    <div>
+                        <p class="one">600</p>
+                        <p class="two">Кількість грамот</p>
+                    </div>
+                    <div>
+                        <p class="one">412+</p>
+                        <p class="two">Кількість презентацій</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background-color:#FDF5E6;">
+<div class="container">
+    <div class="block4">
+        <h2>----Navigation----</h2>
+        <div class="block4-div1">
+            <div class="block4-content">
+                <div class="block4-div2">
+                    <div class="block-content">
+                        <h2><a class="fa fa-book" style="font-size:30px;" href="/students/books/">Підручники</a></h2>
+                        <p>В цьому розділі Ви знайдете підручники, які стануть Вам у нагоді до підготовки до уроків.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block4-content">
+                <div class="block4-div2">
+                  <div class="block-content">
+                        <h2><a class="fa fa-pencil" style="font-size:30px;" href="/hometasks/posts">Домашнє завдання</a></h2>
+                        <p>Якщо Ви забули записати домашнє завдання після уроку то це не біда. Тут Ви знайдете всю інформацію яку потрібно Вам знати.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block4-content">
+                <div class="block4-div2">
+                    <div class="block-content">
+                    <div class="block-content">
+
+
+                        <h2><a class="fa fa-play" style="font-size:30px;" href="/quiz/">Тестування</a></h2>
+                        <p>Тестові завдання на різний смак. Щоб закріпити знання по тій чи іншій темі, потрібно обов’язково пройти тест. Оцінку, яку ви отримаєте, буде перенесено в журнал теоретичного навчання.
+                            Вчителі можуть скористатися цим тестами для опитування на своїх уроках.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block4-content">
+                <div class="block4-div2">
+                    <div class="block-content">
+                        <h2><a class="fa fa-coffee" style="font-size:30px;" href="/method/  ">Методична робота</a></h2>
+
+                        <p>Методичні розробки уроків теоретичного та виробничого навчання по професіях монтажник санітарно-технічних систем та
+                            устаткування, електрогазозварник, проведення декади монтажників санітарно-технічних систем і устаткування, мулярів,
+                            електрогазозварників, виробників художніх виробів з металу.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block4-content">
+                <div class="block4-div2">
+                    <div class="block-content">
+                        <h2><a class="fa fa-bookmark" style="font-size:30px;" href="/distance/">Дистанційне навчання</a></h2>
+
+                        <p> Тут учні знайдуть конспекти уроків, презентації, які допоможуть закріпити знання з професій монтажник
+                            санітарно-технічних систем та устаткування, електрогазозварник. Також підготуватись до тестових завдань, які будуть
+                            після кожного уроку.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block4-content">
+                <div class="block4-div2">
+                    <div class="block-content">
+                        <h2><a class="fa fa-wrench" style="font-size:30px;" href="/industrial/">Виробниче навчання</a></h2>
+
+                        <p>Ви знайдете тут плани уроків виробничого навчання, інструкційні карти по професіях монтажник санітарно-технічних
+                            систем і устаткування, електрогазозварник, презентації до уроків, відео ролики.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block4-content">
+                <div class="block4-div2">
+                    <div class="block-content">
+                        <h2><a class="fa fa-shield" style="font-size:30px;" href="/practical/">Навчально-практичний центр</a></h2>
+
+                        <p>Центр створено для навчання учнів ВХПТУ №5 м. Вінниці та слухачів Центру зайнятості. Навчання базується на основних принципах модульної системи.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block4-content">
+                <div class="block4-div2">
+                      <div class="block-content">
+                        <h2><a class="fa fa-github" style="font-size:30px;" href="https://github.com/pro1code1hack">Github</a></h2>
+                        <p>В цьому розділі ви знайдете портфоліо розробника.Основна мова програмування Python-досвідчений.HTML/CSS/JS -середній. С++/Java-початківець.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block4-content">
+                    <div class="block4-div2">
+                      <div class="block-content">
+                        <h2><a class="fa fa-forward" style="font-size:30px;" href="http://montazhzvarka.blogspot.com/">Старий блог</a></h2>
+                        <p>Мої напрацювання за 2017-2019 рік. Для додаткових матеріалів, переходьте за посиланням, частина матеріалів що була використана в мої роботі знаходиться саме тут.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="footer">
+
+        <footer>
+            <section>
+                <h4>ВИЩЕ ХУДОЖНЄ ПРОФЕСІЙНО-ТЕХНІЧНЕ УЧИЛИЩЕ № 5 М. ВІННИЦІ / HIGHER ART VOCATIONAL SCHOOL № 5, VINNYTSIA</h4>
+
+                <p> <span>Адреса:</span>
+                    21034, м. Вінниця, вул. Лебединського, 13
+                    Lebedynskoho St. 13, 21034, Vinnytsa, Ukraine</p>
+                <p> <span>Тел/Phone:</span> +380 (432) 27-90-00, +380 (432) 27-87-00, +380 (432) 27-05-73</p>
+                <p> <span>Приймальна комісія/Admission:</span> +380 (73) 463-26-44</p>
+                <p> <span>E-mail:</span> vhptu5@vhptu5.vn.ua</p>
+            </section>
+
+        </footer>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d868.6881414358776!2d28.5107115945164!3d49.2303883639282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b19cef95d2f%3A0x3eb89bbdd78e4d29!2z0JLQuNGJ0LUg0YXRg9C00L7QttC90ZQg0L_RgNC-0YTQtdGB0ZbQudC90L4t0YLQtdGF0L3RltGH0L3QtSDRg9GH0LjQu9C40YnQtSDihJYgNQ!5e1!3m2!1suk!2sua!4v1630612724593!5m2!1suk!2sua"
+                    width="700px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+</div>
+
+</body>
+
+</html>
